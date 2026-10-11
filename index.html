@@ -11,7 +11,24 @@
     <p id="gameResult"></p>
 
     <script>
-        // JavaScript game code goes here
+        // Step 1 & 2: Prompt introducing Bear Ninja Hunter, collecting the name, and storing it
+let playerName = prompt("Welcome to Bear Ninja Hunter! Please enter your name:");
+
+// Step 3: Display greeting for every player using string concatenation (no if statement)
+alert("Hi " + playerName + " Let's Play!!");
+
+// Step 4 & 5: Ask for the player's choice and store it
+let playerChoice = prompt("Who are you: Bear, Ninja, or Hunter?");
+
+// Step 6: Store "Bear" as the computer's fixed choice
+let computerChoice = "Bear";
+
+// Step 7: Build the personalized result using concatenation matching exact required wording
+let resultMessage = playerName + ", You picked " + playerChoice + "! The computer picked " + computerChoice + "!";
+
+// Step 8: Display the result using console.log() and innerHTML matching "gameResult"
+console.log(resultMessage);
+document.getElementById("gameResult").innerHTML = resultMessage;
     </script>
 </body>
 </html>
